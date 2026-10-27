@@ -10,7 +10,7 @@ import {
   isValidTimeString,
   isValidDateString,
   roundCurrency,
-} from './src/utils/wageCalculator';
+} from './utils/wageCalculator';
 import {
   ShiftRecord,
   DiscrepancyStatus,
@@ -19,7 +19,7 @@ import {
   DailyWagePolicy,
   RecordSource,
   AuthenticatedUser,
-} from './src/types/shift';
+} from './types/shift';
 
 dotenv.config();
 
