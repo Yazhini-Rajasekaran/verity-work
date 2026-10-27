@@ -1,0 +1,8 @@
+{
+  "name": "VERITY WORK",
+  "description": "VERITY WORK — Your work. Your record. Your worth. Worker-first shift logging, transparent wage calculations, and discrepancy resolution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
