@@ -18,8 +18,8 @@ import { SmartShiftLogger } from './components/SmartShiftLogger';
 import { ShiftHistoryList } from './components/ShiftHistoryList';
 import { SupervisorAuditDesk } from './components/SupervisorAuditDesk';
 import { DiscrepancyModal } from './components/DiscrepancyModal';
-import { VerificationTestSuiteModal } from './components/VerificationTestSuiteModal';
-import { SDGInfoModal } from './components/SDGInfoModal';
+import { VerificationTestSuiteModal } from './VerificationTestSuiteModal';
+import { SDGInfoModal } from './SDGInfoModal';
 import { LanguageCode, getTranslation } from './utils/translations';
 
 export default function App() {
