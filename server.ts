@@ -1315,6 +1315,15 @@ app.post('/api/reset-demo', authenticate, rateLimiter(10, 60000), (req: Request,
   res.json({ success: true, count: shiftsStore.length, shifts: shiftsStore });
 });
 
+// In Vercel, route requests through this Express function and serve the built SPA here.
+// Vercel rewrites preserve the incoming path, so /api/* reaches the API handlers above.
+if (process.env.VERCEL) {
+  app.use(express.static(path.resolve(__dirname, 'dist')));
+  app.get('*', (_req: Request, res: Response) => {
+    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+  });
+}
+
 // Global Safe Error Handler: never leak stack traces or internal environment details
 app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
   console.error('Handled server error:', err?.message || 'Unknown error');
