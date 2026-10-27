@@ -12,7 +12,7 @@ import {
   Download,
   AlertCircle,
 } from 'lucide-react';
-import { runAllVerificationTests, TestSuiteReport } from '../utils/testSuite';
+import { runAllVerificationTests, TestSuiteReport } from './utils/testSuite';
 
 interface VerificationTestSuiteModalProps {
   isOpen: boolean;
